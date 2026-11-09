@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- aapt2 richiede ancora -v26 per le icone adattive. -->
+    <issue id="ObsoleteSdkInt" severity="ignore" />
+    <!-- Avviso interno a BouncyCastle, dipendenza di PdfBox-Android: non usato per connessioni di rete. -->
+    <issue id="TrustAllX509TrustManager" severity="ignore" />
+</lint>
