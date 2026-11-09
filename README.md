@@ -1,195 +1,198 @@
 <div align="center">
 
-<img src="docs/icon.svg" width="112" alt="Icona di Leggimi">
+<img src="docs/icon.svg" width="112" alt="Leggimi icon">
 
 # Leggimi
 
-**Trasforma i tuoi documenti in audiolibri, con le voci di [ElevenLabs](https://elevenlabs.io).**
+**Turn your documents into audiobooks, read by [ElevenLabs](https://elevenlabs.io) voices.**
 
-PDF, Word, EPUB, appunti: aprili sul telefono e ascoltali mentre guidi, cucini o cammini.
+PDFs, Word files, EPUBs, notes: open them on your phone and listen while you drive, cook or walk.
 
-[![Release](https://img.shields.io/github/v/release/SimoneFaricelli/leggimi?label=versione&color=A0662A)](https://github.com/SimoneFaricelli/leggimi/releases/latest)
+[![Release](https://img.shields.io/github/v/release/SimoneFaricelli/leggimi?label=release&color=A0662A)](https://github.com/SimoneFaricelli/leggimi/releases/latest)
 ![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.4-7F52FF?logo=kotlin&logoColor=white)
 ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?logo=jetpackcompose&logoColor=white)
-![ElevenLabs](https://img.shields.io/badge/voci-ElevenLabs-000000)
+![ElevenLabs](https://img.shields.io/badge/voices-ElevenLabs-000000)
 
-### [⬇️ Scarica l'APK](https://github.com/SimoneFaricelli/leggimi/releases/latest)
+### [⬇️ Download the APK](https://github.com/SimoneFaricelli/leggimi/releases/latest)
 
 </div>
 
+> [!NOTE]
+> *Leggimi* is Italian for "read me". The app's interface is in Italian. The voices can read any language that the ElevenLabs model you pick supports.
+
 ---
 
-## ✨ Perché Leggimi
+## ✨ Why Leggimi
 
-Hai una dispensa, un manuale o un romanzo e niente tempo per leggerlo con gli occhi? Leggimi estrae il testo dal documento, lo divide in paragrafi e lo fa leggere da una voce ElevenLabs. Il risultato è un audiolibro con l'intonazione naturale di un narratore, nella voce che scegli tu.
+Got a handout, a manual or a novel and no time to sit down and read it? Leggimi extracts the text from the document, splits it into paragraphs and has an ElevenLabs voice read it to you. You get an audiobook with the natural delivery of a real narrator, in the voice you choose.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 📚 Qualsiasi documento
-PDF, Word, ODT, EPUB, RTF, HTML, Markdown e TXT. Si importano dall'app oppure con **Apri con** e **Condividi** da qualunque altra app.
+### 📚 Any document
+Leggimi opens PDF, Word (DOCX), ODT, EPUB, RTF, HTML, Markdown and TXT files. You can import them inside the app, or use **Open with** or **Share** from any other app.
 
 </td>
 <td width="50%" valign="top">
 
-### 🎙️ La voce che preferisci
-Puoi usare tutte le voci del tuo account ElevenLabs, con ricerca, filtri e anteprima. Scegli una voce e un modello per tutti i documenti, oppure una voce diversa per ogni libro.
+### 🎙️ The voice you like
+Every voice in your ElevenLabs account is available, with search, filters and preview. Pick one voice and model for everything, or a different voice for each book.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-### 👆 Tocca e ascolta
-Il testo scorre mentre ascolti e il paragrafo in lettura è evidenziato. Tocca un paragrafo qualsiasi e la lettura riparte da lì. L'indice dei capitoli porta direttamente al punto che cerchi.
+### 👆 Tap and listen
+The text scrolls as you listen, with the current paragraph highlighted. Tap any paragraph to start reading from there. The chapter index takes you straight to the part you want.
 
 </td>
 <td valign="top">
 
-### 🎧 Come un vero lettore audio
-La lettura continua in background, con i comandi in notifica, sulla schermata di blocco e dalle cuffie. Puoi regolare la velocità da 0,75× a 2× e impostare un timer di spegnimento, anche "a fine capitolo".
+### 🎧 A real audio player
+Playback keeps going in the background. You can control it from the notification, the lock screen and your headphones. Speed goes from 0.75× to 2×, and a sleep timer can stop after a set time or at the end of the chapter.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-### 💰 Paghi una volta sola
-L'audio generato resta salvato sul telefono, quindi riascoltare non consuma crediti. Se cambi voce e poi torni a quella di prima, l'app riusa l'audio già pagato.
+### 💰 Pay once
+Generated audio is stored on your phone, so listening again costs no credits. If you switch voice and later switch back, Leggimi reuses the audio you already paid for.
 
 </td>
 <td valign="top">
 
-### 📍 Riprendi da dove eri
-Ogni documento ricorda il punto in cui ti sei fermato, e nella libreria vedi a che punto sei di ogni lettura.
+### 📍 Pick up where you left off
+Every document remembers where you stopped. The library shows how far along you are in each one.
 
 </td>
 </tr>
 </table>
 
-## 🚀 Inizia in tre minuti
+## 🚀 Get started in three minutes
 
-1. **Installa.** Scarica `Leggimi-x.y.z.apk` dalle [release](https://github.com/SimoneFaricelli/leggimi/releases/latest) direttamente dal telefono e aprilo. Android ti chiederà di consentire l'installazione da origini sconosciute.
-2. **Collega ElevenLabs.** Apri ⚙️ **Impostazioni**, incolla la tua chiave API e premi **Salva e verifica**. Compaiono il tuo piano e i caratteri che ti restano.
-   > La chiave la crei su *elevenlabs.io → Settings → API Keys*. Servono almeno i permessi *Text to Speech*, *Voices (read)*, *Models (read)* e *User (read)*.
-3. **Scegli voce e modello.**
-   - *Eleven Multilingual v2*: la resa migliore in italiano per testi lunghi.
-   - *Flash v2.5*: più rapido ed economico.
-4. **Aggiungi un documento** dalla libreria e premi ▶️.
+1. **Install.** On your phone, download `Leggimi-x.y.z.apk` from the [releases](https://github.com/SimoneFaricelli/leggimi/releases/latest) and open it. Android will ask you to allow installs from unknown sources.
+2. **Connect ElevenLabs.** Open ⚙️ **Impostazioni** (Settings), paste your API key and tap **Salva e verifica** (Save and verify). Your plan and remaining characters appear.
+   > Create a key at *elevenlabs.io → Settings → API Keys*. It needs at least the *Text to Speech*, *Voices (read)*, *Models (read)* and *User (read)* permissions.
+3. **Choose a voice and a model.**
+   - *Eleven Multilingual v2*: the best quality for long texts.
+   - *Flash v2.5*: faster and cheaper.
+4. **Add a document** from the library and press ▶️.
 
-## 🧠 Come funziona
+## 🧠 How it works
 
 ```mermaid
 flowchart LR
-    A[📄 Documento] --> B[Estrazione del testo<br/>e ricostruzione dei paragrafi]
-    B --> C[Un paragrafo<br/>per richiesta]
+    A[📄 Document] --> B[Text extraction<br/>and paragraph rebuilding]
+    B --> C[One paragraph<br/>per request]
     C --> D[🎙️ ElevenLabs<br/>text-to-speech]
-    D --> E[💾 Cache mp3<br/>sul telefono]
-    E --> F[🎧 Riproduzione<br/>Media3]
+    D --> E[💾 mp3 cache<br/>on the phone]
+    E --> F[🎧 Media3<br/>playback]
 ```
 
 <details>
-<summary><b>PDF letti come un libro, non come un insieme di righe</b></summary>
+<summary><b>PDFs read like a book, not like a pile of lines</b></summary>
 
 <br>
 
-Un PDF non contiene paragrafi, solo righe posizionate sulla pagina. Leggimi ricostruisce i paragrafi guardando posizione, spaziatura e dimensione di ogni riga. Due righe restano unite, tranne quando c'è un segnale chiaro di nuovo paragrafo:
+A PDF has no paragraphs, only lines placed on a page. Leggimi rebuilds the paragraphs from the position, spacing and font size of each line. Two lines stay together unless something clearly starts a new paragraph:
 
-- inizia un punto elenco;
-- lo spazio verticale tra le righe è ampio;
-- cambia la dimensione del carattere;
-- una frase finisce su una riga corta, oppure è seguita da un rientro.
+- a bullet or numbered item begins;
+- the vertical gap between the lines is large;
+- the font size changes;
+- a sentence ends on a short line, or is followed by an indented line.
 
-Così:
-- gli elenchi puntati restano interi;
-- i paragrafi che proseguono alla pagina successiva non si spezzano;
-- le parole divise con il trattino vengono ricucite;
-- intestazioni, piè di pagina e numeri di pagina ripetuti non vengono letti ad alta voce.
+As a result:
+- bulleted lists stay whole;
+- paragraphs that continue onto the next page don't get split;
+- hyphenated words broken across lines are joined back together;
+- repeated headers, footers and page numbers are not read aloud.
 
-Se i segnalibri del PDF ci sono, diventano l'indice dei capitoli.
+If the PDF has bookmarks, they become the chapter index.
 
 </details>
 
 <details>
-<summary><b>Intonazione continua e nessuna attesa</b></summary>
+<summary><b>Smooth delivery, no waiting</b></summary>
 
 <br>
 
-Ogni paragrafo viene inviato a ElevenLabs insieme a circa 500 caratteri di testo precedente e successivo. Così la voce mantiene un'intonazione coerente da un paragrafo all'altro. Mentre ascolti, l'app genera in anticipo i paragrafi successivi, almeno 1.500 caratteri, per passare all'audio seguente senza pause.
+Each paragraph goes to ElevenLabs together with up to 500 characters of the text before and after it. This keeps the voice's intonation consistent from one paragraph to the next. While you listen, Leggimi generates upcoming paragraphs in advance (at least 1,500 characters), so the next part plays without a pause.
 
 </details>
 
 <details>
-<summary><b>Crediti sotto controllo</b></summary>
+<summary><b>Credits under control</b></summary>
 
 <br>
 
-ElevenLabs conta i caratteri letti. Gli mp3 vengono salvati in base a testo, voce, modello e regolazioni, quindi riascoltare un brano non costa nulla. Puoi controllare lo spazio occupato e svuotare la cache dalle impostazioni. La velocità di riproduzione si cambia sul telefono e non richiede di rigenerare l'audio.
+ElevenLabs bills by the characters it reads. Each mp3 is stored under a key built from its text, voice, model and voice settings, so replaying a passage costs nothing. Settings show how much space the cache uses and let you clear it. Playback speed is applied on the phone, so changing it never regenerates audio.
 
 </details>
 
 ## 🔒 Privacy
 
-- **La chiave API** resta sul telefono, cifrata con l'Android Keystore (AES-GCM), e non finisce nei backup.
-- **I documenti** vengono copiati nello spazio privato dell'app. Il testo da leggere viene inviato solo a ElevenLabs.
-- **Nessun server intermedio**, nessuna statistica d'uso, nessuna pubblicità.
+- **Your API key** stays on your phone, encrypted with the Android Keystore (AES-GCM), and is never included in backups.
+- **Your documents** are copied into the app's private storage. The text to be read is sent only to ElevenLabs.
+- **No middleman server**, no usage analytics, no ads.
 
-## ❓ Domande frequenti
+## ❓ FAQ
 
 <details>
-<summary><b>Quanto costa?</b></summary>
+<summary><b>How much does it cost?</b></summary>
 <br>
-L'app è gratuita. Paghi solo i caratteri che ElevenLabs sintetizza, secondo il tuo piano (anche il piano gratuito funziona). Dopo la prima lettura, riascoltare è gratis.
+The app is free. You only pay for the characters ElevenLabs synthesizes, according to your plan; the free plan works too. After the first listen, replaying is free.
 </details>
 
 <details>
-<summary><b>Funziona senza connessione?</b></summary>
+<summary><b>Does it work offline?</b></summary>
 <br>
-Le parti già ascoltate o generate in anticipo sì, perché sono salvate sul telefono. Per generare audio nuovo serve internet.
+Yes for anything already played or generated in advance, since it is stored on the phone. Generating new audio needs an internet connection.
 </details>
 
 <details>
-<summary><b>Il mio PDF non si importa: "non contiene testo selezionabile".</b></summary>
+<summary><b>My PDF won't import: "non contiene testo selezionabile" (no selectable text).</b></summary>
 <br>
-È probabilmente una scansione, cioè contiene immagini delle pagine e non testo. Leggimi non fa riconoscimento ottico dei caratteri (OCR). Passa prima il PDF in uno strumento OCR e poi importalo.
+It is most likely a scan: the pages are images, not text. Leggimi does not do OCR. Run the PDF through an OCR tool first, then import it.
 </details>
 
 <details>
-<summary><b>E i file .doc (Word 97-2003)?</b></summary>
+<summary><b>What about .doc files (Word 97–2003)?</b></summary>
 <br>
-Non sono supportati. Salvali come .docx da Word o LibreOffice.
+They are not supported. Save them as .docx from Word or LibreOffice.
 </details>
 
-## 🛠️ Compilare dal codice
+## 🛠️ Building from source
 
-Ti serve solo **Docker**. Tutta la toolchain Android (JDK 21, SDK 37, Gradle 9.9) è nell'immagine definita in [`docker/Dockerfile`](docker/Dockerfile).
+All you need is **Docker**. The whole Android toolchain (JDK 21, SDK 37, Gradle 9.9) lives in the image defined in [`docker/Dockerfile`](docker/Dockerfile).
 
 ```bash
-build/build.sh                # test + APK debug    → dist/Leggimi-debug.apk
-build/build.sh release        # test + APK firmato  → dist/Leggimi-<versione>.apk
-build/build.sh -- lintDebug   # qualsiasi task Gradle
+build/build.sh                # tests + debug APK   → dist/Leggimi-debug.apk
+build/build.sh release        # tests + signed APK  → dist/Leggimi-<version>.apk
+build/build.sh -- lintDebug   # any Gradle task
 ```
 
 > [!IMPORTANT]
-> La prima build `release` crea un keystore in `~/.leggimi-keystore/`. **Fanne un backup**: senza quel keystore non potrai installare aggiornamenti sopra l'app esistente.
+> The first `release` build creates a keystore in `~/.leggimi-keystore/`. **Back it up**: without it you can't install updates over the existing app.
 
-In [`samples/`](samples) trovi tre documenti di prova (DOCX, PDF, Markdown).
+[`samples/`](samples) contains three test documents (DOCX, PDF, Markdown).
 
 <details>
-<summary><b>Struttura del progetto</b></summary>
+<summary><b>Project layout</b></summary>
 
 ```
 app/src/main/java/it/faricelli/leggimi/
-  data/extract/   estrattori di testo, uno per formato (PDF: ricostruzione dei paragrafi)
-  data/text/      modello del documento e Segmenter (paragrafi → richieste di sintesi)
-  data/eleven/    client REST di ElevenLabs
-  data/audio/     cache degli mp3
-  data/db/        Room: libreria e posizione di lettura
-  data/settings/  DataStore e chiave API cifrata
-  player/         PlayerEngine (coda, prefetch, timer) e PlaybackService (Media3)
-  ui/             schermate Compose: libreria, lettore, impostazioni, scelta di voce e modello
+  data/extract/   text extractors, one per format (PDF: paragraph rebuilding)
+  data/text/      document model and Segmenter (paragraphs → synthesis requests)
+  data/eleven/    ElevenLabs REST client
+  data/audio/     mp3 cache
+  data/db/        Room: library and reading position
+  data/settings/  DataStore and encrypted API key
+  player/         PlayerEngine (queue, prefetch, sleep timer) and PlaybackService (Media3)
+  ui/             Compose screens: library, reader, settings, voice and model pickers
 ```
 
 **Stack**: Kotlin · Jetpack Compose (Material 3) · Media3 ExoPlayer · Room · DataStore · OkHttp · kotlinx.serialization · PdfBox-Android · Jsoup · commonmark.
@@ -199,5 +202,5 @@ app/src/main/java/it/faricelli/leggimi/
 ---
 
 <div align="center">
-<sub>Fatto con ☕ e tanta voglia di ascoltare invece di leggere.</sub>
+<sub>Made with ☕ for people who'd rather listen than read.</sub>
 </div>
